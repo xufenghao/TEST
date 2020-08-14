@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Web>
+	<AppName>尚勤软件人力资源系统</AppName>
+	<RunMode>dev</RunMode>
+    <UI reportPageNum="50" browsePageNum="20"/>
+	<Server httpPort="3300" staticRootPath="Public" landingPage="home"/>
+	<Database dbType = "mssql" name="shlrzy" logMode="true">
+		<ConnString>Server=localhost;Database=jhyt_hrms;User ID=sa;Password=YYsoft01!;connection timeout = 36000</ConnString>
+	</Database>
+	<Redis server="localhost" port="6379" password=""/>
+	<Logrun maxAge="168" rotationTime="24"/>
+	<SSRS>
+		<Url>http://localhost/report/DataReport/ReportViewForGo.aspx</Url>
+	</SSRS>
+	<Xmla userName="" password="">
+		<Url>http://localhost/olap/msmdpump.dll</Url>
+		<DataSourceInfo>localhost</DataSourceInfo>
+		<Catalog>bankdwnc</Catalog>
+		<CubeName>YyBankdw</CubeName>
+	</Xmla>
+</Web>
