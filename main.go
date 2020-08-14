@@ -6,6 +6,7 @@ import (
 	"github.com/go-gomail/gomail"
 )
 
+//发送邮箱
 func SendMail(mailTo []string, subject string, body string) error {
 	//定义邮箱服务器连接信息，如果是阿里邮箱 pass填密码，qq邮箱填授权码
 	mailConn := map[string]string{
