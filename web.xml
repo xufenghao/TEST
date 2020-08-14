@@ -17,5 +17,6 @@
 		<DataSourceInfo>localhost</DataSourceInfo>
 		<Catalog>bankdwnc</Catalog>
 		<CubeName>YyBankdw</CubeName>
+		<Path></Path>
 	</Xmla>
 </Web>
